@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <title>Form</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="header__title">Create account</h1>
+    </header>
+
+    <main class="main">
+      <form action="#" class="main__form">
+        <section class="main__input-container main__first-name">
+          <label
+            for="first-name"
+            class="main__label main__indent main__label_margin"
+            >First name*</label
+          >
+
+          <input
+            type="text"
+            name="first-name"
+            id="first-name"
+            placeholder="Enter your first name"
+            class="main__input"
+          />
+          <aside class="main__error"></aside>
+        </section>
+
+        <section class="main__input-container main__last-name">
+          <label
+            for="last-name"
+            class="main__label main__indent main__label_margin"
+            >Last name*</label
+          >
+          <input
+            type="text"
+            name="last-name"
+            id="last-name"
+            placeholder="Enter your last name"
+            class="main__input"
+          />
+          <aside class="main__error"></aside>
+        </section>
+
+        <section class="main__input-container main__email">
+          <label for="email" class="main__label main__indent main__label_margin"
+            >Email*</label
+          >
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            class="main__input"
+          />
+          <aside class="main__error"></aside>
+        </section>
+
+        <section class="main__input-container main__password">
+          <label
+            for="password"
+            class="main__label main__indent main__label_margin"
+            >Password*</label
+          >
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter your password"
+            class="main__input main__pass-input"
+          />
+          <aside class="main__error"></aside>
+        </section>
+
+        <section class="main__input-container main__confirm-password">
+          <label
+            for="confirm-password"
+            class="main__label main__indent main__label_margin"
+            >Confirm password*</label
+          >
+          <input
+            type="password"
+            name="confirm-password"
+            id="confirm-password"
+            placeholder="Confirm your password"
+            class="main__input main__pass-input"
+          />
+          <aside class="main__error"></aside>
+        </section>
+
+        <fieldset class="main__fieldset main__radio-wrapper main__indent">
+          <legend class="main__label">Sex:</legend>
+
+          <label for="male" class="main__check-container radio-container"
+            >Male
+            <input type="radio" name="sex" id="male" />
+            <span class="main__checking-space main__radio"></span>
+          </label>
+          <label for="female" class="main__check-container radio-container"
+            >Female
+            <input type="radio" name="sex" id="female" />
+            <span class="main__checking-space main__radio"></span>
+          </label>
+        </fieldset>
+
+        <fieldset class="main__fieldset main__checkbox-wrapper main__indent">
+          <legend class="main__label">Hobbies</legend>
+
+          <label for="music" class="main__check-container checkbox-container"
+            >Music
+            <input type="checkbox" name="hobby" id="music" />
+            <span class="main__checking-space main__checkmark"></span>
+          </label>
+
+          <label for="sports" class="main__check-container checkbox-container"
+            >Sports
+            <input type="checkbox" name="hobby" id="sports" />
+            <span class="main__checking-space main__checkmark"></span>
+          </label>
+
+          <label for="travel" class="main__check-container checkbox-container"
+            >Travel
+            <input type="checkbox" name="hobby" id="travel" />
+            <span class="main__checking-space main__checkmark"></span>
+          </label>
+
+          <label for="movies" class="main__check-container checkbox-container"
+            >Movies
+            <input type="checkbox" name="hobby" id="movies" />
+            <span class="main__checking-space main__checkmark"></span>
+          </label>
+        </fieldset>
+
+        <section class="main__input-container main__select-container">
+          <label>
+            <span class="main__label main__indent">Source of income</span>
+            <select name="source" id="source" class="main__input main__select">
+              <option value="employed" selected class="main__option">
+                Employed
+              </option>
+              <option value="cars" class="main__option">Stealing cars</option>
+              <option value="drugs" class="main__option">Selling drugs</option>
+              <option value="trains" class="main__option">
+                Robbing mail trains
+              </option>
+            </select>
+          </label>
+        </section>
+
+        <section class="income main__input-container">
+          <label for="income" class="main__label income__label">Income</label>
+          <output id="output" class="income__output"></output>
+          <div class="income__slider-wrapper">
+            <input
+              type="range"
+              name="income"
+              id="income"
+              class="income"
+              min="0"
+              max="50"
+              step="1"
+              value="20"
+            />
+          </div>
+        </section>
+
+        <section class="main__input-container main__upload">
+          <label for="file" class="main__label main__indent main__label_margin"
+            >Upload profile picture</label
+          >
+          <input type="file" name="file" id="file" class="file" />
+        </section>
+
+        <section class="main__input-container main__age">
+          <label for="age" class="main__label main__indent">Birth date</label>
+          <input
+            type="date"
+            name="age"
+            id="age"
+            value="2000-01-01"
+            class="main__input"
+          />
+          <aside class="main__error"></aside>
+        </section>
+
+        <section class="textarea__wrapper">
+          <label for="bio" class="main__label main__indent">Bio</label>
+          <textarea name="bio" id="bio" class="main__input textarea"></textarea>
+          <div class="textarea__handle">
+            <svg width="23" height="23" class="textarea__icon">
+              <rect
+                x="9"
+                y="0"
+                width="3"
+                height="3"
+                class="textarea__handle-icon"
+              />
+              <rect
+                x="6"
+                y="3"
+                width="3"
+                height="3"
+                class="textarea__handle-icon"
+              />
+              <rect
+                x="3"
+                y="6"
+                width="3"
+                height="3"
+                class="textarea__handle-icon"
+              />
+              <rect
+                x="9"
+                y="6"
+                width="3"
+                height="3"
+                class="textarea__handle-icon"
+              />
+              <rect
+                x="0"
+                y="9"
+                width="3"
+                height="3"
+                class="textarea__handle-icon"
+              />
+              <rect
+                x="6"
+                y="9"
+                width="3"
+                height="3"
+                class="textarea__handle-icon"
+              />
+            </svg>
+          </div>
+        </section>
+
+        <button class="main__button">Create</button>
+      </form>
+    </main>
+  </body>
+
+  <script src="scripts/income.js"></script>
+  <script src="scripts/textarea.js"></script>
+  <script src="scripts/validation.js"></script>
+</html>
